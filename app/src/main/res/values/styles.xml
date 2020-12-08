@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Personalizado" parent="Theme.MaterialComponents.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="MiBotonRaised">
+        <item name="android:buttonStyle">@style/Personalizado</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <!-- Image rounded -->
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- Image radius -->
+    <style name="radiusImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15%</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+
+</resources>

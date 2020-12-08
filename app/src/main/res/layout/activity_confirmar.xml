@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView1"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fondoCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_card_background"
+            android:scaleType="fitXY"
+            android:src="@drawable/fondo"
+            android:visibility="visible" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/usuario"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            android:src="@drawable/usuario"
+            android:layout_height="@dimen/size_image_user"
+            android:layout_width="@dimen/size_image_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_top_user" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvNombreCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_vertical_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_texto_titulos"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_text_view"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvNumCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_vertical_text"
+        android:textSize="@dimen/size_texto_mostrar"
+        android:gravity="center" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_vertical_text"
+        android:textSize="@dimen/size_texto_mostrar"
+        android:gravity="center" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCarrera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_vertical_text"
+        android:textSize="@dimen/size_texto_mostrar"
+        android:textStyle="italic|bold"
+        android:gravity="center" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgIngenieria"
+        android:layout_width="@dimen/size_img_ing"
+        android:layout_height="@dimen/size_img_ing"
+        android:layout_gravity="center"
+        app:shapeAppearanceOverlay="@style/radiusImageView"
+        android:scaleType="fitXY" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_text_view"
+        android:text="@string/texto_btn_back"
+        app:backgroundTint="@color/colorAccent"
+        app:cornerRadius="@dimen/radius_button"
+        android:textSize="@dimen/size_texto_mostrar"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
